@@ -1,0 +1,327 @@
+/* Fonty */
+
+/* Montserrat 300 - Latin a Latin Extended */
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../font/montserrat-v25-latin_latin-ext-300.woff2') format('woff2'),
+        url('../font/montserrat-v25-latin_latin-ext-300.woff') format('woff');
+}
+
+/* Montserrat regular - Latin a Latin Extended */
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/montserrat-v25-latin_latin-ext-regular.woff2') format('woff2'),
+        url('../font/montserrat-v25-latin_latin-ext-regular.woff') format('woff');
+}
+
+/* Montserrat 700 - Latin a Latin Extended */
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../font/montserrat-v25-latin_latin-ext-700.woff2') format('woff2'),
+        url('../font/montserrat-v25-latin_latin-ext-700.woff') format('woff');
+}
+
+/* Krona One regular - Latin a Latin Extended */
+@font-face {
+    font-display: swap;
+    font-family: 'Krona One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/krona-one-v14-latin_latin-ext-regular.eot');
+    src: url('../font/krona-one-v14-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/krona-one-v14-latin_latin-ext-regular.woff2') format('woff2'),
+        url('../font/krona-one-v14-latin_latin-ext-regular.woff') format('woff'),
+        url('../font/krona-one-v14-latin_latin-ext-regular.ttf') format('truetype'),
+        url('../font/krona-one-v14-latin_latin-ext-regular.svg#KronaOne') format('svg');
+    /* Pro starší verze iOS */
+}
+
+/* Obecné styly */
+
+body {
+    font-family: 'Montserrat'; /* Používáme font Montserrat pro celý dokument */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Kontejner */
+
+.container {
+    width: 70%; /* Šířka kontejneru */
+    margin: auto; /* Zarovnání na střed */
+    text-align: center; /* Zarovnání textu na střed */
+}
+
+/* Úpravy pro záhlaví */
+
+header .container {
+    width: 85%; /* Šířka kontejneru v záhlaví */
+    text-align: center; /* Zarovnání textu na střed */
+}
+
+/* Obrázky */
+
+.obrazek {
+    width: 100%; /* Šířka obrázku na 100% kontejneru */
+    display: block; /* Obrázek jako blokový element */
+}
+
+/* Logo */
+
+.logo {
+    display: inline-block; /* Logo jako inline-blok pro zarovnání */
+    font-size: 20px; /* Velikost písma loga */
+    font-family: "Krona One"; /* Používáme font Krona One pro logo */
+    margin: 15px; /* Odsazení loga */
+}
+
+/* Menu v záhlaví */
+
+.headermenu ul,
+.menu ul {
+    list-style: none; /* Odstranění výchozího seznamu */
+    padding: 0; /* Odstranění vnitřního odsazení */
+}
+
+.headermenu ul li,
+.menu ul li {
+    display: inline-block; /* Položky menu jako inline-blok */
+    text-transform: uppercase; /* Písmo ve velkých písmenech */
+    font-weight: 300; /* Tloušťka písma */
+    padding: 15px; /* Vnitřní odsazení položek menu */
+    margin: 15px; /* Vnější odsazení položek menu */
+}
+
+/* Odkazy */
+
+a {
+    color: black; /* Barva odkazů */
+    text-decoration: none; /* Odstranění podtržení */
+    text-transform: uppercase; /* Písmo ve velkých písmenech */
+}
+
+a:hover,
+a:active {
+    transition: all 0.3s ease-in-out; /* Plynulý přechod */
+    background-color: darkgrey; /* Barva pozadí při najetí myší */
+}
+
+/* Ikony */
+
+.ikony {
+    display: flex; /* Flexbox layout pro ikony */
+    padding-top: 24px; /* Vnější odsazení */
+    justify-content: space-between; /* Rozložení ikon */
+}
+
+/* Sekce textu */
+
+.section-text h1 {
+    font-size: 50px; /* Velikost nadpisu */
+    text-transform: uppercase; /* Písmo ve velkých písmenech */
+    font-weight: 700; /* Tloušťka písma */
+    padding-top: 70px; /* Vnější odsazení z vrchu */
+    white-space: nowrap; /* Nepřerušovaný řádek */
+}
+
+.section-text h2 {
+    font-size: 24px; /* Velikost nadpisu */
+    color: #a57a5b; /* Barva textu */
+    font-weight: 700; /* Tloušťka písma */
+    padding-top: 50px; /* Vnější odsazení z vrchu */
+    padding-bottom: 50px; /* Vnější odsazení zespodu */
+    white-space: nowrap; /* Nepřerušovaný řádek */
+}
+
+.section-text p {
+    padding-bottom: 100px; /* Vnější odsazení zespodu */
+}
+
+/* Patička */
+
+footer {
+    background-color: #eaeaea; /* Barva pozadí */
+    margin-top: 50px; /* Vnější odsazení z vrchu */
+}
+
+.footerikony i {
+    line-height: 24px; /* Výška řádku */
+    padding-right: 25px; /* Vnější odsazení zprava */
+}
+
+.kontakt a {
+    text-transform: inherit; /* Ponechání původního textového převodu */
+}
+
+.mail {
+    color: red; /* Barva e-mailového textu */
+    text-transform: lowercase; /* Písmo malými písmeny */
+    font-weight: bold; /* Tloušťka písma */
+}
+
+.mail i {
+    color: black; /* Barva ikony e-mailu */
+}
+
+.footermedia {
+    font-size: 25px; /* Velikost písma */
+    padding-top: 10px; /* Vnější odsazení z vrchu */
+    padding-bottom: 20px; /* Vnější odsazení zespodu */
+}
+
+/* Responsivní design */
+
+@media only screen and (max-width: 890px) {
+    /* Úpravy pro menší obrazovky */
+}
+
+/* Kontaktovní sekce */
+
+.sectionkontakt {
+    background-color: #eaeaea; /* Barva pozadí */
+    margin-top: 50px; /* Vnější odsazení z vrchu */
+    text-align: justify; /* Zarovnání textu */
+    line-height: 25px; /* Výška řádku */
+}
+
+/* Nadpis kontaktovní sekce */
+
+.sectionkontakt h1 {
+    font-size: 40px; /* Velikost nadpisu */
+    line-height: 50px; /* Výška řádku */
+    font-weight: 700; /* Tloušťka písma */
+    padding: 25px; /* Vnější odsazení */
+    margin-top: 70px; /* Vnější odsazení z vrchu */
+    text-align: center; /* Zarovnání textu na střed */
+}
+
+/* Ikony v kontaktovní sekci */
+
+.sectionkontakt .sectionikony {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Rozložení ikon */
+    white-space: nowrap; /* Nepřerušovaný řádek */
+    padding-left: 10px; /* Vnější odsazení zleva */
+}
+
+.sectionkontakt .sectionikony i {
+    padding-right: 10px; /* Vnější odsazení zprava */
+    margin-right: 10px; /* Vnější odsazení zprava */
+    margin-bottom: 10px; /* Vnější odsazení zdola */
+}
+
+/* Otevírací doba v kontaktovní sekci */
+
+.sectionkontakt .pracdoba {
+    padding-right: 10px; /* Vnější odsazení zprava */
+    margin-left: 10px; /* Vnější odsazení zleva */
+}
+
+/* Platební karty v kontaktovní sekci */
+
+.sectionkontakt .karty {
+    text-align: center; /* Zarovnání textu na střed */
+    padding-top: 25px; /* Vnější odsazení z vrchu */
+}
+
+.sectionkontakt .platebni-karty {
+    font-size: 30px; /* Velikost písma */
+    margin-right: 10px; /* Vnější odsazení zprava */
+    padding-bottom: 30px; /* Vnější odsazení zespodu */
+}
+
+.sectionkontakt .pracdoba {
+    font-weight: normal; /* Normální tloušťka písma */
+}
+
+/* Mapa v kontaktovní sekci */
+
+.sectionkontakt .mapa {
+    padding-top: 10px; /* Vnější odsazení z vrchu */
+    padding-bottom: 10px; /* Vnější odsazení zespodu */
+    background-color: #fff; /* Barva pozadí */
+}
+
+.sectionkontakt .mapa img {
+    width: 100%; /* Šířka obrázku na 100% kontejneru */
+    height: auto; /* Automatická výška */
+    display: block; /* Obrázek jako blokový element */
+}
+
+/* Napište nám */
+
+.napiste-nam {
+    padding-top: 30px; /* Vnější odsazení z vrchu */
+    font-size: 20px; /* Velikost písma */
+    text-align: center; /* Zarovnání textu na střed */
+}
+
+/* Formulář */
+
+.form {
+    max-width: 70%; /* Maximální šířka formuláře */
+    margin: auto; /* Zarovnání na střed */
+    text-align: center; /* Zarovnání textu na střed */
+    padding: 30px; /* Vnější odsazení */
+}
+
+.form input,
+.form textarea {
+    width: 100%; /* Šířka inputů a textarey na 100% */
+    padding: 10px; /* Vnější odsazení */
+    border: solid light; /* Okraj s lehkou barvou */
+    margin-bottom: 5px; /* Vnější odsazení zespodu */
+}
+
+.form .submit-button {
+    background-color: red; /* Barva pozadí tlačítka */
+    border: none; /* Žádný okraj */
+    border-radius: 5px; /* Zaoblené rohy */
+    color: white; /* Barva textu */
+    cursor: pointer; /* Ukazatel ruky */
+    width: inherit; /* Dědění šířky */
+    margin-bottom: 15px; /* Vnější odsazení zespodu */
+    transition: background-color 0.3s ease-in-out; /* Plynulý přechod */
+}
+
+.form .submit-button:hover {
+    background-color: darkgrey; /* Barva pozadí při najetí myší */
+}
+
+/* Responsivní design pro menší obrazovky */
+
+@media (max-width: 890px) {
+    /* Úpravy pro menší obrazovky */
+}
+
+/* Galerie */
+
+.sectiongalery h1 {
+    font-size: 40px; /* Velikost nadpisu */
+    font-weight: 700; /* Tloušťka písma */
+    padding: 25px; /* Vnější odsazení */
+    margin-top: 70px; /* Vnější odsazení z vrchu */
+    text-align: center; /* Zarovnání textu na střed */
+}
+
+.galerie-obsah img {
+    max-width: 70%; /* Maximální šířka obrázku */
+    margin: auto; /* Zarovnání na střed */
+    padding: 5px; /* Vnější odsazení */
+}
